@@ -114,50 +114,50 @@ deliverables!**
    updated on the server. You will need to make a request that follows this
    structure:
 
-    ```txt
-    PATCH /characters/:id
+   ```txt
+   PATCH /characters/:id
 
-    Request Headers: {
-      Content-Type: application/json
-    }
+   Request Headers: {
+     Content-Type: application/json
+   }
 
-    Request Body: {
-      "votes": 100
-    }
-    ----
+   Request Body: {
+     "votes": 100
+   }
+   ----
 
-    Example Response: {
-      "id": 1,
-      "name": "Mr. Cute",
-      "image": "https://thumbs.gfycat.com/EquatorialIckyCat-max-1mb.gif",
-      "votes": 100
-    }
-    ```
+   Example Response: {
+     "id": 1,
+     "name": "Mr. Cute",
+     "image": "https://thumbs.gfycat.com/EquatorialIckyCat-max-1mb.gif",
+     "votes": 100
+   }
+   ```
 
 2. When a user adds a new character to the page using the character form, in
    addition to having the character show up on the page, it should **also** be
    saved to the server. You will need to make a request that follows this
    structure:
 
-    ```txt
-    POST /characters
+   ```txt
+   POST /characters
 
-    Request Headers: {
-      Content-Type: application/json
-    }
+   Request Headers: {
+     Content-Type: application/json
+   }
 
-    Request Body: {
-      "name": "Character Name",
-      "image": "https://example.com/my-image.gif",
-      "votes": 0
-    }
+   Request Body: {
+     "name": "Character Name",
+     "image": "https://example.com/my-image.gif",
+     "votes": 0
+   }
 
-    ----
+   ----
 
-    Example Response: {
-      "id": 6,
-      "name": "Character Name",
-      "image": "https://example.com/my-image.gif",
-      "votes": 0
-    }
-    ```
+   Example Response: {
+     "id": 6,
+     "name": "Character Name",
+     "image": "https://example.com/my-image.gif",
+     "votes": 0
+   }
+   ```
